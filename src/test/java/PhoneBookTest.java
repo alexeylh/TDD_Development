@@ -46,7 +46,7 @@ class PhoneBookTest {
         String name = "Вася";
         String expected = "111111";
         phonebook.add(name, expected);
-        String result = phonebook.findByNumber(name);
+        String result = phonebook.findByName(name);
         Assertions.assertEquals(expected, result);
     }
 }
