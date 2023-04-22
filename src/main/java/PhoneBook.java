@@ -25,6 +25,10 @@ public class PhoneBook {
     }
 
     public String printAllNames() {
-        return null;
+        StringBuilder result = new StringBuilder();
+        for (String name: names) {
+            result.append(name + "\n");
+        }
+        return result.toString();
     }
 }
