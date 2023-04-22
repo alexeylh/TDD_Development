@@ -27,8 +27,8 @@ class PhoneBookTest {
         String phone1 = "111111";
         String phone2 = "222222";
         int expected = 1;
-        int result = phonebook.add(name, phone1);
-        result += phonebook.add(name, phone2);
+        phonebook.add(name, phone1);
+        int result = phonebook.add(name, phone2);
         Assertions.assertEquals(expected, result);
     }
 }
