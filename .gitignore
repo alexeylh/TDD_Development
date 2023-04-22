@@ -1,0 +1,7 @@
+.idea
+.gradle
+*iml
+conf
+domain
+target
+out
