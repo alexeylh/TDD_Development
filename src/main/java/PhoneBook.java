@@ -17,6 +17,6 @@ public class PhoneBook {
     }
 
     public String findByNumber(String phone) {
-        return null;
+        return PhonesAndNames.get(phone);
     }
 }
