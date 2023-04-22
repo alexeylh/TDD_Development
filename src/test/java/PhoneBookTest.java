@@ -49,4 +49,14 @@ class PhoneBookTest {
         String result = phonebook.findByName(name);
         Assertions.assertEquals(expected, result);
     }
+
+    @Test
+    void printAllNames() {
+        phonebook.add("Петя", "11000");
+        phonebook.add("Вася", "11111");
+        phonebook.add("Маша", "55555");
+        String expected = "Вася\nМаша\nПетя\n";
+        String result = phonebook.printAllNames();
+        Assertions.assertEquals(expected, result);
+    }
 }
